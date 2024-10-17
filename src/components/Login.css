@@ -1,0 +1,119 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    background-color: #4a5015;
+    padding: 15px;
+}
+.login-form {
+    width: 100%;
+    max-width: 400px; 
+    background-color: #05c7b7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 12px; 
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-failed {
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-control {
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    transition: border-color 0.3s; 
+}
+
+.form-label {
+    color: #080808; 
+    font-weight: 600;
+}
+
+h2, h4 {
+    color: #000000; 
+}
+
+.form-control:focus {
+    border-color: #b30009;
+    box-shadow: 0 0 5px rgba(179, 0, 9, 0.5);
+}
+
+.btn-primary {
+    background-color: #6c757d; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 12px; 
+    font-size: 18px; 
+    color: #ffffff;  
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.btn-primary:hover {
+    background-color: #005ab9; 
+}
+.btn-secondary {
+    background-color: #6c757d; 
+    border:  none; 
+
+    border-radius: 5px; 
+    padding: 12px;   
+    font-size: 18px;  
+    color: #ffffff; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.btn-secondary:hover {
+    background-color: #005ab9; 
+}
+.logo-container {
+    position: absolute; 
+    top: 30px;
+    left: 40px; 
+}
+
+.hospital-logo {
+    width: 200px; 
+    height: 100px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7))brightness(1.1);
+     /* border: 3px solid rgba(0,0,0,0.8);
+     border-radius: 8px; */
+     object-fit: contain;
+
+}
+@media (max-width: 768px) and (max-width:1199px) {
+    .hospital-logo{
+        width: 30%;
+        max-width: 150px;
+    }
+    .login-form {
+        padding: 20px; 
+    }
+    
+    .login-failed {
+        padding: 20px; 
+    }
+}
+@media (max-width: 575px) {
+    .hospital-logo{
+        width: 40%;
+        max-width: 120px;
+    }
+@media (max-width: 768px) {
+    .employee-table td, .employee-table th {
+        padding: 10px; 
+        font-size: 14px;
+    }
+}
+
