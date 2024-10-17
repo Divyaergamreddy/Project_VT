@@ -50,8 +50,8 @@ const Login = ({ setEmployees, employees }) => {
   };
 
   const handleShowEmployeeForm = () => {
-    setShowEmployeeForm(true); // Show the employee form when button clicked
-    setLoginFailed(false); // Reset login failed state
+    setShowEmployeeForm(true);
+    setLoginFailed(false); 
   };
 
   return (

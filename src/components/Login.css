@@ -1,121 +1,108 @@
-/* Ensure the login container fills the screen */
 .login-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Relative positioning for logo placement */
-    background-color: #4a5015; /* Background color */
+    position: relative; 
+    background-color: #4a5015;
     padding: 15px;
 }
-/* Form styling */
 .login-form {
     width: 100%;
-    max-width: 400px; /* Set a max-width for the form */
-    background-color: #05c7b7; /* Form background color */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
-    border-radius: 12px; /* Rounded corners */
-    padding: 40px; /* Increased padding for a spacious look */
+    max-width: 400px; 
+    background-color: #05c7b7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 12px; 
+    padding: 40px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* Failed login message styling */
 .login-failed {
     text-align: center;
     width: 100%;
-    max-width: 400px; /* Match form width */
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
-    border-radius: 12px; /* Rounded corners */
+    max-width: 400px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 12px;
     padding: 30px;
 }
 
-/* Input field styling */
 .form-control {
-    border: 1px solid #007bff; /* Hospital blue border */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 10px; /* Adequate padding for comfort */
-    margin-bottom: 15px; /* Spacing between fields */
-    transition: border-color 0.3s; /* Smooth border transition */
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    transition: border-color 0.3s; 
 }
 
-/* Label styling */
 .form-label {
-    color: #080808; /* Change label color to white */
-    font-weight: 600; /* Bold for better visibility */
+    color: #080808; 
+    font-weight: 600;
 }
 
-/* Header styling */
 h2, h4 {
-    color: #da0808; /* Change header color to white */
+    color: #da0808; 
 }
 
-/* Focus effect for input fields */
 .form-control:focus {
-    border-color: #b30009; /* Darker red on focus */
-    box-shadow: 0 0 5px rgba(179, 0, 9, 0.5); /* Shadow effect on focus */
+    border-color: #b30009;
+    box-shadow: 0 0 5px rgba(179, 0, 9, 0.5);
 }
 
-/* Button styling */
 .btn-primary {
-    background-color: #6c757d; /* Primary hospital blue */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 12px; /* Adequate padding */
-    font-size: 18px; /* Increased font size */
-    color: #ffffff; /* White text */
+    background-color: #6c757d; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 12px; 
+    font-size: 18px; 
+    color: #ffffff;  
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth background transition */
+    transition: background-color 0.3s; 
 }
 .btn-primary:hover {
-    background-color: #005ab9; /* Darker blue on hover */
+    background-color: #005ab9; 
 }
 .btn-secondary {
-    background-color: #6c757d; /* Gray for secondary button */
-    border:  none; /* Remove default border */
+    background-color: #6c757d; 
+    border:  none; 
 
-    border-radius: 5px; /* Rounded corners */
-    padding: 12px; /* Adequate padding */
-    font-size: 18px; /* Increased font size */
-    color: #ffffff; /* White text */
+    border-radius: 5px; 
+    padding: 12px;   
+    font-size: 18px;  
+    color: #ffffff; 
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth background transition */
+    transition: background-color 0.3s; 
 }
 .btn-secondary:hover {
-    background-color: #005ab9; /* Darker gray on hover */
+    background-color: #005ab9; 
 }
-/* Logo styling */
 .logo-container {
-    position: absolute; /* Absolute positioning for logo */
-    top: 30px; /* Adjust top position */
-    left: 40px; /* Adjust right position */
+    position: absolute; 
+    top: 30px;
+    left: 40px; 
 }
 
 .hospital-logo {
-    width: 200px; /* Increased width for logo */
+    width: 200px; 
     height: 100px;
-     /* Increased height for logo */
-     filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7))brightness(1.1);
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7))brightness(1.1);
      /* border: 3px solid rgba(0,0,0,0.8);
      border-radius: 8px; */
      object-fit: contain;
 
 }
-
-/* Responsive design */
 @media (max-width: 768px) and (max-width:1199px) {
     .hospital-logo{
         width: 30%;
         max-width: 150px;
     }
     .login-form {
-        padding: 20px; /* Reduce padding on smaller screens */
+        padding: 20px; 
     }
     
     .login-failed {
-        padding: 20px; /* Reduce padding on smaller screens */
+        padding: 20px; 
     }
 }
 @media (max-width: 575px) {
@@ -123,14 +110,9 @@ h2, h4 {
         width: 40%;
         max-width: 120px;
     }
-
-
-
-
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .employee-table td, .employee-table th {
-        padding: 10px; /* Reduce padding on smaller screens */
+        padding: 10px; 
         font-size: 14px;
     }
 }

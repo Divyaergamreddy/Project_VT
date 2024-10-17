@@ -1,5 +1,5 @@
 import React from 'react';
-import './EmployeeTable.css'; // Import the CSS file
+import './EmployeeTable.css'; 
 
 const EmployeeTable = ({ employees }) => {
   return (
