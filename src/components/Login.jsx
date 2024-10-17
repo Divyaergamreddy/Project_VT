@@ -69,7 +69,7 @@ const Login = ({ setEmployees, employees }) => {
         </div>
       ) : isLoggedIn || showEmployeeForm ? (
         <form className="login-form" onSubmit={handleEmployeeSubmit}>
-          <h2><b>Employee Details</b></h2>
+          <center><h2><b>Employee Details</b></h2></center>
           <div className="mb-3">
             <label htmlFor="name" className="form-label" >Name:-</label>
             <input type="text" placeholder="Enter the Employee Name" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
