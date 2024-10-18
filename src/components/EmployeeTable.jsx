@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // For prop validation
 import './EmployeeTable.css'; 
 
-const EmployeeTable = ({ employees }) => {
+const EmployeeTable = ({ employees = [] }) => {
   return (
     <div className="employee-page">
       <h1 className="employee-heading">Employee Records</h1>
-      <table className="employee-table">
+      <table className="employee-table" aria-label="Employee Records">
         <thead>
           <tr>
             <th>Name</th>
@@ -35,6 +36,18 @@ const EmployeeTable = ({ employees }) => {
       </table>
     </div>
   );
+};
+
+// Prop validation to ensure 'employees' is an array of objects
+EmployeeTable.propTypes = {
+  employees: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      phone: PropTypes.string.isRequired,
+      gender: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default EmployeeTable;
